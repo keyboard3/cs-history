@@ -1,0 +1,547 @@
+# 发展历史
+- 1991
+  - 9.1: Linux 0.01 发布
+- 1992
+  - 1.5:  Linux v0.12 release 版本的内核重新以GUN GPL的协议发布。原来的许可证是禁止任何商业用途的。通过这次协议变更，发布和出售修改或未修改版的Linux成为了可能
+  - 5.21: Peter MacDonald 发布第一个独立的Linux安装包SLS。可以通过软盘安装，包括比较前沿的TCP-IP网络支持和X Window系统。建议至少预留10M的磁盘空间来安装。
+- 1993
+  - 6.17:  Slackware Linux由Patrick Volkerding发布。Slackware被认为是第一个取得广泛成功的Linux发行版
+  - 8.16: Ian Murdock（Debian中的'ian'）发布了第一个Debian Linux的发行版。Debian是最有影响力的Linux发行版之一，是MEPIS，Mint，Ubuntu和很多其它发行版的鼻祖。
+- 1994
+  - 3.14: Linux 内核V1.0发布。它支持基于i386单处理器的计算机系统。这3年来，内核代码库已经增长到了176,250行
+- 1995
+  - xx: JDK beta
+  - 5: Mocha (LiveScript) Brendan Eich只用了10天，就设计完成了这种语言的第一版设计
+    - 基本语法：借鉴C语言和Java语言。
+    - 数据结构：借鉴Java语言，包括将值分成原始值和对象两大类。
+    - 函数的用法：借鉴Scheme语言和Awk语言，将函数当作第一等公民，并引入闭包。
+    - 原型继承模型：借鉴Self语言（Smalltalk的一种变种）。
+    - 正则表达式：借鉴Perl语言。
+    - 字符串和数组处理：借鉴Python语言。
+  - 9: LiveScript(JavaScript)
+  - 12: JavaScript (Netscape 公司与 Sun 公司联合发布)
+- 1996
+  - xx: 样式表标准CSS第一版发布
+  - 1: JDK 1
+  - 3: Navigator 2.0 浏览器正式内置了 JavaScript 1.0 脚本语言
+  - 5.9: Linux 吉祥物企鹅形象确定
+  - 6.9: Linux 内核V2.0发布
+  - 8: JScript (微软发明的JS相近的语言，内置在IE3.0)
+  - 10.14: Mattias Ettrich发起了KDE项目，因为他深受Unix桌面系统下应用程序的不一致之苦。(在此之前Unix和Linux都没有一个统一的桌面系统，编写桌面软件非常复杂)
+- 1997
+  - xx: DHTML（Dynamic HTML，动态HTML）发布，允许动态改变网页内容。这标志着DOM模式（Document Object Model，文档对象模型）正式应用
+  - 2: JDK 1.1
+  - 7: EcmaScript 1.0(JS标准化)
+    - 对象类型的规范引入了属性标记的概念，用于控制如何访问或修改各个属性
+    - 引入内部方法概念。用于定义对象基本行为的算法
+    - var 变量、if、while、for、for in、cotinue、break、return、with
+    - 基础类型(undefined、null、bool、string、number)、原型链对象、函数对象
+- 1998
+  - xx: Netscape公司开源了浏览器套件，这导致了Mozilla项目的诞生。几个月后，美国在线（AOL）宣布并购Netscape
+  - 5.1: Google搜索引擎面世。它不仅仅是世界上最好的搜索引擎之一，更是基于Linux的，它的特征是有一个Linux的搜索页面
+  - 6: EcmaScript 2.0
+  - 12: J2SE 1.2
+- 1999
+  - xx: IE 5部署了XMLHttpRequest接口，允许JavaScript发出HTTP请求，为后来大行其道的Ajax应用创造了条件
+  - 3.3: 颇具影响力的桌面系统进入了Linux的世界，就是GNOME桌面系统。在很多主要的Linux发行版比如Debian，Fedora，RedHad Enterprise Linux和SUSE Linux Enterprise Desktop中，GNOME是默认的桌面环境
+  - 12: EcmaScript 3.0
+    - try-catch-finally 和异常对象
+    - instanceof 和 in 运算符
+    - 对象原型方法: hasInstance, hasOwnProperty, isPrototypeOf, propertyIsEnumerable
+    - 对象字面量、数组字面量、正则表达式字面量
+    - 数组方法: concat, slice, push, pop, shift, splice, unshift。正则方法等
+- 2000
+  - xx: KDE项目重写了浏览器引擎KHTML，为后来的WebKit和Blink引擎打下基础
+  - 3.23: 爱立信公布了“Screen Phone HS210”，这是一款基于Linux的触屏手机，具备邮件和网页浏览等功能。爱立信和Opera Software公司同时宣布这款手机将会安装Opera的网页浏览器。
+  - 5: J2SE 1.3
+  - 10.23: KDE 2.0发布，第一次将KHTML浏览器包括其中
+- 2001
+  - xx: 微软公司时隔5年之后，发布了IE浏览器的下一个版本Internet Explorer 6。这是当时最先进的浏览器，它后来统治了浏览器市场多年
+  - xx: Douglas Crockford提出了JSON格式，用于取代XML格式，进行服务器和网页之间的数据交换。JavaScript可以原生支持这种格式，不需要额外部署代码
+- 2002
+  - xx: Mozilla项目发布了它的浏览器的第一版，后来起名为Firefox
+  - 2: J2SE 1.4
+- 2003:
+  - xx: 苹果公司发布了Safari浏览器的第一版
+- 2004
+  - xx: Google公司发布了Gmail，促成了互联网应用程序（Web Application）这个概念的诞生。由于Gmail是在4月1日发布的，很多人起初以为这只是一个玩笑
+  - xx: Dojo框架诞生，为不同浏览器提供了同一接口，并为主要功能提供了便利的调用方法。这标志着JavaScript编程框架的时代开始来临
+  - xx: WHATWG组织成立，致力于加速HTML语言的标准化进程
+  - 9: J2SE 1.5
+- 2005
+  - xx: 苹果公司在KHTML引擎基础上，建立了WebKit引擎
+  - xx: Ajax方法（Asynchronous JavaScript and XML）正式诞生，Jesse James Garrett发明了这个词汇。它开始流行的标志是，2月份发布的Google Maps项目大量采用该方法。它几乎成了新一代网站的标准做法，促成了Web 2.0时代的来临
+  - xx: Apache基金会发布了CouchDB数据库。这是一个基于JSON格式的数据库，可以用JavaScript函数定义视图和索引。它在本质上有别于传统的关系型数据库，标识着NoSQL类型的数据库诞生
+- 2006
+  - xx: jQuery函数库诞生，作者为John Resig。jQuery为操作网页DOM结构提供了非常强大易用的接口，成为了使用最广泛的函数库，并且让JavaScript语言的应用难度大大降低，推动了这种语言的流行
+  - xx: 微软公司发布IE 7，标志重新开始启动浏览器的开发
+  - xx: Google推出 Google Web Toolkit 项目（缩写为GWT），提供Java编译成JavaScript的功能，开创了将其他语言转为JavaScript的先河
+  - xx: Google 启动 v8 js引擎项目
+  - 12: Java SE 6
+- 2007
+  - xx: Webkit引擎在iPhone手机中得到部署。它最初基于KDE项目，2003年苹果公司首先采用，2005年开源。这标志着JavaScript语言开始能在手机中使用了，意味着有可能写出在桌面电脑和手机中都能使用的程序
+  - 5: iPhone OS 1 (iPhone 2G, iPod)
+  - 10: EcmaScript 4.0 草案，有分歧
+  - 12: Android SDK 发布
+    - Dalvik 虚拟机
+      - 体积小，占用内存空间小；
+      - 专有的DEX可执行文件格式，体积更小，执行速度更快；
+      - 常量池采用32位索引值，寻址类方法名、字段名、常量更快；
+      - 基于寄存器架构，并拥有一套完整的指令系统；
+      - 提供了对象生命周期管理、堆栈管理、线程管理、安全和异常管理以及垃圾回收等重要功能；
+      - 所有的Android程序都运行在Android系统进程里，每个进程对应着一个Dalvik虚拟机实例
+- 2008
+  - 7: EcmaScript 4太激进，现有功能改善的作为 EcmaScript 5(3.1) Harmony（和谐)
+  - 7.12: iPhone OS2 (iPhone 3G, iPod touch)
+  - 9.2: V8 编译器诞生(直接编译成机器码执行)
+    - Full-Codegen 将代码一次性编译成未优化的机器码执行
+    - V8 只支持 ia32 和 ARM 指令集
+    - 使用 SCons 作为构建系统。
+  - 9.23: Android 1.0
+- 2009
+  - xx: V8 引入一个名为 Irregexp 的正则表达式引擎, 支持x64
+  - 2.9: Android 1.1
+  - 4: CommonJs 规范 Modules1.0
+    - 模块的标识应遵循一定的书写规则。
+    - 定义全局函数 require(dependency)，通过传入模块标识来引入其他依赖模块，执行的结果即为别的模块暴漏出来的 API。
+    - 如果被 require 函数引入的模块中也包含外部依赖，则依次加载这些依赖。
+    - 如果引入模块失败，那么 require 函数应该抛出一个异常。
+    - 模块通过变量 exports 来向外暴露 API，exports 只能是一个 object 对象，暴漏的 API 须作为该对象的属性。
+  - 4.5: PhoneGap项目诞生，它将HTML5和JavaScript引入移动设备的应用程序开发，主要针对iOS和Android平台，封装移动设备api集给web端调用
+  - 4.27: Android 1.5
+  - 5: Node.js项目诞生 v0.x
+    - 连接常见的POSIX接口，JS回调，简化的浏览器事件循环
+    - V8引擎, CommonJs模块加载器,C实现的平台非阻塞版本模块(文件和网络操作)
+  - 6.18: iPhone OS 3 (iPhone 3G.3GS / iPod 1,2)
+  - 9: CommonJS 模块社区激进派的 James Burke 在 2009 年 9 月开发出了 RequireJS 这一模块加载器，以实践证明自己的观点
+  - 9.15: Android 1.6
+  - 11.19: Google发布Chrome OS，号称是以浏览器为基础发展成的操作系统，允许直接使用JavaScript编写应用程序。类似的项目还有Mozilla的Firefox OS
+  - 12: EcmaScript 5 发布
+    - NaN、Infinity、undefined 都是常量了，不可更改。
+    - 添加 JSON 序列化和反序列化
+    - 函数新增 bind 方法
+    - 数组添加了一系列方法: every, filter, forEach, indexOf, lastIndexOf, map, reduce, reduceRight, some
+    - Array.isArray 
+    - 对象新增一系列方法。Object.keys(), Object.create(), Object.defineProperty, Object.defineProperties...
+    - 对象的属性可以添加配置。writeable, value, enumerable, configurable, get, set
+    - 严格模式
+      - 函数里没有隐式的全局变量了，你要创建全局变量必须是显式的。比如想用 a = 1 创建全局变量是不行的。
+      - this 不会默认指向全局对象（比如 window 或者 global）了。
+      - call 和 apply 也不会默认使用全局对象了。
+      - 不准用 with
+      - 如果一个属性的 writeable 是 false，那么你给这个属性赋值就会报错。
+      - 如果一个属性的 configurable 是 false，那么你 delete 这个属性就会报错。
+      - 对 eval 和 arguments 做出了限制。以下代码每行都会报错
+      - arguments 只保存原始参数。对形参的赋值不会对 arguments 有影响。
+      - 不准用 arguments.caller 和 arguments.callee
+      - 不支持八进制字面量，比如 var a = 015 会报错。
+      - 对象字面量或者函数形参中，如果有重复的名字，就会报错。
+  - 12.3: Jeremy Ashkenas发布了CoffeeScript的最初版本。CoffeeScript可以被转化为JavaScript运行，但是语法要比JavaScript简洁。这开启了其他语言转为JavaScript的风潮
+- 2010
+  - xx: tj写的Express
+  - xx: facebook的php出现xhp
+  - xx: V8 更新 
+    - 引入了全新的优化 JIT 编译器 Crankshaft,支持32 位 MIPS指令集
+    - JS在执行的过程中，V8内置的Profiler筛选出热点函数并且记录参数的反馈类型，然后交给 Crankshaft 来进行优化生成机器码
+  - 1?: npm 发布
+  - 5.20: Android 2.2 
+    - Dalvik虚拟机也支持JIT
+  - 6.21: iOS 4 (iPhone 3,4 / iPod touch 2,3)
+  - 10.13: BackboneJS 提供了各种架构，如模型，视图，事件，路由和集合组装的客户端Web应用程序
+  - 12.6: Android 2.3
+- 2011
+  - xx: Jordan Walke 创建的React早期原型FaxJs
+  - xx: V8 更新
+    - 垃圾回收器性能得到了极大的改善
+    - V8 引入了隔离的概念，可以在一个进程中启动多个 V8 运行时实例，为在 Chrome 中实现轻量级的 Web Worker 铺平了道路
+    - 构建系统迁移，从 SCons 转向 GYP
+    - 支持 ES5 strict mode
+  - xx: 微软公司发布Windows 8操作系统，将JavaScript作为应用程序的开发语言之一，直接提供系统支持
+  - xx: Google发布了Dart语言，目的是为了结束JavaScript语言在浏览器中的垄断，提供更合理、更强大的语法和功能。Chromium浏览器有内置的Dart虚拟机，可以运行Dart程序，但Dart程序也可以被编译成JavaScript程序运行
+  - 2: AMD 规范发布(RequireJS社区)
+  - 6: EcmaScript 5.1
+  - 7: Java SE 7
+  - 10.12: iOS 5 (iPad 2 / iPhone 3,4 / iPod 3,4)
+  - 10.4: PhoneGap代码交给Apache基金会，改名为Cordova
+  - 10.18: Android 4.0
+- 2012
+  - xx: Jordan Walke 创建 React 原型解决广告难以管理的问题
+  - xx: V8 更新。基准测试年
+  - xx: AngularJS 1.0
+  - xx: 微软发布TypeScript语言。该语言被设计成JavaScript的超集，这意味着所有JavaScipt程序，都可以不经修改地在TypeScript中运行。同时，TypeScript添加了很多新的语法特性，主要目的是为了开发大型程序，然后还可以被编译成JavaScript运行
+  - xx: asm 规范
+> Mozilla基金会提出asm.js规格。asm.js是JavaScript的一个子集，所有符合asm.js的程序都可以在浏览器中运行，它的特殊之处在于语法有严格限定，可以被快速编译成性能良好的机器码。这样做的目的，是为了给其他语言提供一个编译规范，使其可以被编译成高效的JavaScript代码。同时，Mozilla基金会还发起了Emscripten项目，目标就是提供一个跨语言的编译器，能够将LLVM的位代码（bitcode）转为JavaScript代码，在浏览器中运行。因为大部分LLVM位代码都是从C / C++语言生成的，这意味着C / C++将可以在浏览器中运行。此外，Mozilla旗下还有LLJS（将JavaScript转为C代码）项目和River Trail（一个用于多核心处理器的ECMAScript扩展）项目。目前，在可以被编译成JavaScript的语言列表上，共有将近40种语言
+  - xx: Ben Alman 发布了基于任务的构建工具 Grunt
+  - 7.9: Android 4.1
+  - 9.20: iOS 6 (iPad 2, mini / iPhone 3,4,5/ iPod 4,5) 
+- 2013
+  - xx: Mozilla基金会发布手机操作系统Firefox OS，该操作系统的整个用户界面都使用JavaScript
+  - xx: 百度提出轻应用
+  - xx: ECMA正式推出JSON的国际标准，这意味着JSON格式已经变得与XML格式一样重要和正式了
+  - xx: tj开始玩generator，编写co这个generator执行器，并开始了Koa
+  - xx: Eric Schoffstall 发布了流式的构建工具 Gulp。
+  - xx: 面向浏览器端模块的打包工具Browserify发布
+  - 3: EcmaScript 6 草案冻结
+  - 3: Seed.js (Vue 早期)
+  - 5: Facebook发布UI框架库 React 0.3，引入了新的JSX语法，使得UI层可以用组件开发。
+  - 7: Vue的前身Seed.js
+  - 9.19: iOS 7 (iPad 2,Air,mini 1,2 / iPhone 4,5 / iPod 5)
+  - 10.31: [Android 4.4](https://developer.android.com/about/versions/kitkat?hl=zh-cn)
+    - 全屏沉浸模式
+    - 透明系统 UI 样式
+    - Chromium WebView
+    - ART是一项实验性功能，默认情况下不激活。Android Runtime（ART）作为新的运作环境，在安装应用程序时，它会使用提前编译（AOT）来把应用程序字节码完全编译为机器语言
+  - 12: EcmaScript 6 草案发布
+  - 12: [Vue 0.6](https://www.npmjs.com/package/vue/v/0.6.0)
+- 2014
+  - xx: V8 更新
+    - V8 通过并发编译将 JIT 编译的一些工作从主线程中移除，以此来减少堵塞，并显著提升了性能。后来，我们推出了名为 TurboFan 的新优化编译器的初始版本。
+    - 继 Chromium 之后，V8 转向了另一个构建系统 GN
+    - 在源代码控制方面，V8 从 SVN 迁移到了 Git
+  - xx: 微软推出JavaScript的Windows库WinJS，标志微软公司全面支持JavaScript与Windows操作系统的融合
+  - 2.19: Webpack 1.0
+  - 3: Java SE 8 (LTS)
+  - 9: UMD 兼容的统一: 美籍华裔 Homa Wong 提交了 UMD 第一个版本的代码
+  - 10.21: iOS 8 (iPad 2,Air,mini 1,2 / iPhone 4,5,6 / iPod 5)
+  - 11: 由于对Joyent公司垄断Node项目、以及该项目进展缓慢的不满，一部分核心开发者离开了Node.js，创造了io.js项目，这是一个更开放、更新更频繁的Node.js版本，很短时间内就发布到了2.0版。三个月后，Joyent公司宣布放弃对Node项目的控制，将其转交给新成立的开放性质的Node基金会。随后，io.js项目宣布回归Node，两个版本将合并
+  - 11.9: Vue 0.11
+  - 11.12: [Android 5.0 21 Lollipop](https://developer.android.com/about/versions/lollipop?hl=zh-cn)
+    - ART 虚拟机
+      - 预先 (AOT) 编译
+      - 垃圾回收方面的优化
+      - 开发和调试方面的优化
+    - 限制获取AppTask
+    - WebView默认阻止第三方内容：setMixedContentMode()
+    - Material Design
+    - 提出JobScheduler
+    - 屏幕采集和屏幕共享
+- 2015
+  - xx: V8 更新
+    - 实现了代码缓存和脚本流，大大加快了网页加载速度
+    - 同年晚些时候，开始了新解释器 Ignition 的开发工作
+    - 同年12月分，第一个 WebAssembly 原型来到了 V8 上
+  - xx: DCloud 提出流应用
+  - xx: Rich Harris 发布的 Rollup 项目，基于 ES6 模块化，提供了 Tree Shaking 的功能
+  - xx: 百度的 FIS 3 
+    - 基于静态资源标记+动态解析静态资源表，在模板、js里边使用特殊的标记方法引用前端资源，构建的时候生成一张资源依赖表，浏览器或者后端模板语言在解析的过程中通过查表得到某个静态资源在不同环境下的引用路径
+  - 1: 6to5和EsNext团队开发 babel
+  - 3.10: React 0.13 支持ES6的class语法创建组件
+  - 3.26: React Native for iOS
+  - 2.6: Node 0.12: 支持 generator
+  - 4: Flutter(测试版) 会议公布， 支持 Android
+  - 4: Angular 框架宣布，2.0版将基于微软公司的TypeScript语言开发，这等于为JavaScript语言引入了强类型。
+  - 5: Node模块管理器npm超越CPAN，标志着JavaScript成为世界上软件模块最多的语言
+  - 5: Google公司的Polymer框架发布1.0版。该项目的目标是生产环境可以使用WebComponent组件，如果能够达到目标，Web开发将进入一个全新的以组件为开发基础的阶段
+  - 6: EcmaScript 6(2015) 发布
+    - class
+    - Module
+    - Function: 箭头函数, 参数展开运算符，函数参数默认值，函数生成器
+    - 函数参数默认值
+    - 模板字符串
+    - 解构赋值
+    - 延展操作符(Spread operator)
+    - 对象属性简写
+    - Promise
+    - Iterator
+    - 支持 let 与 const
+  - 6: Mozilla 在 asm.js 的基础上发布 WebAssembly 项目。这是一种JavaScript语言编译后的二进制格式，类似于Java的字节码，有利于移动设备加载JavaScript脚本，解析速度提高了20+倍。这意味着将来的软件，会发布JavaScript二进制包
+  - 6.11: Vue 0.12
+  - 8.22: Koa 1.0 :通过co + generator实现同步逻辑，那时候co还是基于thunkfy的
+  - 9.8: Node 4 :v8 支持ES6
+  - 9.14: React Native for Android
+  - 9.24: iOS 9(iPad 2,Air 1,2 mini 1,2,3,4 / iPhone 4,5,6/ iPod 5,6)
+  - 10: Vue 1.0
+  - 10.5: [Android 6.0 23 Marshmallow](https://developer.android.com/about/versions/marshmallow/android-6.0-changes?hl=zh-cn)
+    - 省电机制Doze引入
+    - 运行时权限
+    - 移除了对设备本地硬件标识符的编程访问权
+    - 指纹API
+  - 11.28: vuex
+  - 12.27: vue-cli
+- 2016
+  - xx: V8 更新
+    - 最后一组 ES2015（以前称为“ES6”）特性集以及一些 ES2016 特性
+    - 推出新的 Ignition 和 TurboFan 管道
+      - Ignition 解析AST生成字节码去执行
+      - TurboFan 根据字节码的执行反馈去根据基于字节码生成优化的机器码
+    - 启动了 Orinoco 项目，这是一个针对 V8 的并发垃圾回收器，旨在减少主线程垃圾回收时间
+    - 出于调试的目的，V8 检查器从 Chromium 迁移到了 V8，允许任何 V8 嵌入器（不仅仅是 Chromium）使用 Chrome DevTools 来调试在 V8 中运行的 JavaScript
+    - WebAssembly 从原型转为了实验支持
+  - xx: svelte.js 模板语法，编译响应式更新dom（像vue）
+  - xx: angluarjs(1.0) 在html中写模板语法，响应式更新dom数据
+  - 4: Weex 开源 1.0: 基于原生渲染架构
+  - 6: EcmaScript 7
+    - Array.prototype.includes()
+    - 求幂运算符(**)
+  - 8.22: [Android 7.0 24 Nougat](https://developer.android.com/about/versions/nougat/android-7.0?hl=zh-cn)
+    - FileProvider
+    - 低耗电模式进一步优化
+    - 多窗口支持
+    - 添加JIT，属于对AOT的一种补充机制
+      - 应用在安装的时候 dex 不会被编译
+      - 应用在运行时 dex 文件先通过解析器（Interpreter）后会被直接执行（这一步骤跟 Android 2.2 - Android 4.4之前的行为一致），与此同时，热点函数（Hot Code）会被识别并被 JIT 编译后存储在 jit code cache 中并生成 profile 文件以记录热点函数的信息。
+      - 手机进入 IDLE（空闲） 或者 Charging（充电） 状态的时候，系统会扫描 App 目录下的 profile 文件并执行 AOT 过程进行编译。
+    - 引入V2签名
+  - 9.14: Agular (2.0) 现代web工程方案，同样是模板语法，api 上还是走后端mvc那种。形式上跟Vue像
+  - 9.16: iOS 10 (iPad 4,Air 1,2 mini 2,3,4 Pro 9.7,12.9 / iPhone 5,6,7 / iPod 6)
+  - 10: Vue 2.0
+  - 10: Facebook 发布 Yarn
+      - Yarn 的本地缓存文件做的更好
+      - Yarn 可以并行它的一些操作，这加速了对新模块的安装处理
+      - Yarn 使用lockfiles，并用确定的算法来创建一个所有跨机器上都一样的文件
+      - 出于安全考虑，在安装进程里，Yarn 不允许编写包的开发者去执行其他代码
+  - 10.25: Node 7
+    - v8 实现了 async,await 无需规范落地就能够使用
+  - 10.25: NextJS 1.0 发布: React 服务端渲染
+- 2017
+  - 1.8: Webpack 2.2
+  - 1.9: 微信小程序
+  - 3: NextJS 2.0 提高构建效率和热更新的扩展性
+  - 4: V8 更新 5.9
+    - 默认情况下启用新的 Ignition 和 TurboFan 管道
+    - 推出了 Orinoco v1.0，包括并发标记、并发扫描、并行清理和并行压缩
+    - 正式将 Node.js 视为 V8 的一等嵌入器。从那以后，如果某些 V8 补丁无法通过 Node.js 测试套件的测试，就不能推出这些补丁
+    - V8 默认启用了 WebAssembly
+    - 实现了对 JavaScript 模块以及 ES2017 和 ES2018 完整特性集的支持（包括异步函数、共享内存、异步迭代，rest/spread 属性和 RegExp）
+    - 提供了对 JavaScript 代码覆盖的原生支持，并启动了 Web Tooling Benchmark，用以帮助我们衡量 V8 的优化对实际开发者工具以及这些工具所生成的 JavaScript 输出的性能的影响。我们可以借助用于跟踪 JavaScript 对象到 C++ DOM 对象的包装器来解决 Chrome 中长期存在的内存泄漏问题，并有效地处理 JavaScript 和 Blink 堆上对象的闭包传递。我们后来使用这个基础设施来提升开发者工具的堆快照能力
+  - EcmaScript 8
+    - async/await
+    - Object.values(), Object.entries(),Object.getOwnPropertyDescriptors()
+    - String padding: padStart()和padEnd()，填充字符串达到当前长度
+    - ShareArrayBuffer和Atomics对象，用于从共享内存位置读取和写入
+  - 6.20: Webpack 3.0 作用域提升
+  - 8.21: [Android 8.0 26 Oreo](https://developer.android.com/about/versions/oreo/android-8.0?hl=zh-cn)
+    - 当您的应用进入已缓存状态时，如果没有活动的组件，系统将解除应用具有的所有唤醒锁。
+    - 应用无法使用其清单注册大部分隐式广播
+    - 应用尝试在不允许其创建后台服务的情况下使用 startService() 函数，则该函数将引发一个 IllegalStateException
+    - 后台应用时，降低了后台应用接收位置更新的频率
+    - 画中画模式
+    - 应用快捷菜单
+    - 音频自动闪避，失去焦点时自动调小音量
+    - 多显示器支持（移动Activity到另一个窗口会onConfigChange）
+    - 通知栏细化，加入渠道概念
+  - 9: Chrome 61.0 版本发布，首次在浏览器端原生支持了 ES Module
+  - 9: Node.js 迅速跟随，发布了 8.5.0，以支持原生模块化，这一特性被称之为 ECMAScript Modules（简称 MJS）试验性阶段
+  - 9: Java SE 9	
+  - 9.19: iOS 11 (iPad 5,Air 1,2,mini 2,3,4 Pro/ iPhone 5,6,7,8/ iPod 6)
+  - 11: 所有主流浏览器全部支持 WebAssembly，这意味着任何语言都可以编译成 JavaScript，在浏览器运行。
+- 2018
+  - xx: V8 更新
+    - 为 WebAssembly 发布了一个名为 Liftoff 的基线编译器，它大大减少了 WebAssembly 应用程序的启动时间，同时提供了可预测的性能
+    - 发布了 BigInt，一个新的 JavaScript 原始类型，可以实现任意精度的整数
+    - 实现了嵌入式内置函数，并可以对它们进行惰性反序列化，从而显著降低 V8 多个隔离的占用空间
+    - 可以让后台线程编译脚本字节码
+    - 启动了 Unified V8-Blink Heap 项目，可同步运行跨 V8 和 Blink 的垃圾回收。
+  - xx: solid.js 类React语法，靠静态Jsx分析，响应式跟踪更新dom
+  - 1: uni-app 发布第一个版本。 没啥记录意义，原生跨端纯粹套壳，小程序需要编译技术
+  - 2.25: webpack 4 使用Babel转换ES6语法, 开发与生产模式,零配置
+  - 3: Java SE 10	
+  - 3.29: React 16.3 支持 Context 上下文
+  - 4.24: [Node 10](https://zhuanlan.zhihu.com/p/49429391)
+    - 正式支持 HTTP/2 特性
+    - 支持 BigInt
+    - fs.mkdir 和 fs.mkdirSync 支持递归参数
+    - CLI Flag 自动补全
+    - Worker Threads 作为实验性 API 引入
+  - 6: EcmaScript 9
+    - 异步迭代
+    - Promise.finally()
+    - ... Rest对象解构, Spread 对象展开
+    - 正则表达式命名捕获组,反向断言,dotAll模式,Unicode 转义
+    - 非转义序列的模板字符串
+  - 6.7: 开源 Taro 1.0
+  - 7.4: React Native 0.56: 升级 Babel、Android SDK、Xcode、Flow 等依赖版本
+  - 7.31: React Native Fabric (UI-Layer Re-architecture) 核心团队启动架构升级计划
+  - 8：支付宝小程序
+  - 8.6: [Android 9 28 Pie](https://developer.android.com/about/versions/pie/android-9.0?hl=zh-cn)
+    - 后台应用无法访问用户输入和一些传感器数据，如麦克风相机，加速器陀螺仪等，除非使用前台服务
+    - 通话记录权限从Phone组移动到CALL_LOG组，plus，一个组的权限有了一个，其他的的权限也就有了（申请会自动授权）
+    - 不允许使用非SDKAPI，也就是hide的一些SDK方法不许用反射和JNI调用
+    - 支持检测显示屏缺口，非功能区域DisplayCutout，比如检测挖孔屏
+    - 利用 Wi-Fi RTT 进行室内定位
+    - ImageDecoder类可取代BitmapFactory
+    - 签名方案v3
+    - 在 ART 虚拟机的基础上 , 增加了 Cdex ( Compat Dex )机制
+  - 9: Java SE 11 (LTS)
+  - 9: NextJS 7.0 改进错误处理, 支持 React 的上下文 API 以改进动态路由处理。也是第一個升級到 webpack 4 的版本
+  - 9.17: iOS 12 (iPad …,iPhone 5-8, iPod)
+  - 10.23: React 16.6 
+    - React.memo() Hoc 作用到简单的函数组件上
+    - React.lazy() 提供动态 import 组件，实现代码分割
+  - 11.15: Taro 1.1 支持微信/百度/支付宝小程序
+  - 12.4: Flutter 1.0 
+    - Dart 2.1
+    - Hummingbird: 基于 Web 的一个 Flutter 运行时实现，它利用 Dart 将 Flutter 代码编译为本机 ARM 代码或 JavaScript。这使得 Flutter 代码可以不经修改就能在 Web 上运行
+  - 12.18: Taro 1.2 支持头条小程序
+- 2019
+  - 2: NextJS 8.0 提供无服务部署部署的版本，产生静态资源
+  - 2.6: React 16.8 增加 React Hooks
+  - 3: Java SE 12
+  - 3.12: React Native 0.59 
+    - 支持 React Hooks
+    - 升级 Android JSC
+  - 4.28: [Node 12](https://juejin.cn/post/6844903829616459783)
+    - 默认的 HTTP 解析器切换为 llhttp, 提升解析性能
+    - 启动速度提升
+    - 默认启用 Workers Threads
+    - 新的实验性功能 诊断报告
+    - Heap Dump
+    - ES6 模块仍然还在实验阶段,不过有了新的方式
+    - 更好的原生模块支持，N-API 升级为版本 4
+    - TLS 升级为 1.3
+  - 5: Flutter 1.5 (for web)
+  - 6: EcmaScript 10
+    - Array.flat()和Array.flatMap()
+    - String.trimStart()和String.trimEnd(), String.prototype.matchAll
+    - Symbol.prototype.description
+    - Object.fromEntries
+    - 可选 Catch
+  - 6.13: Taro 1.3 支持快应用和QQ小程序，支持jsx和React Hooks
+  - 7.3: React Native 0.60
+    - 默认使用 CocoaPods
+    - Native Modules 自动链接，不在需要 react-native link
+    - 可以在0.60.2 上Android启用 Hemers 引擎
+  - 7.9 [QuickJS 引擎](https://bellard.org/quickjs/)发布
+    - 小巧且易于嵌入：只需几个 C 文件，没有外部依赖，210 KiB 的 x86 代码用于一个简单的 hello world 程序。
+    - 启动时间极短的快速解释器
+    - 支持到ES2020标准，测试套件通过率百分百
+    - 可以将 Javascript 源代码编译为没有外部依赖的可执行文件。
+    - 使用引用计数（以减少内存使用并具有确定性行为）和循环删除的垃圾收集。
+    - 数学扩展：BigDecimal、BigFloat、运算符重载、bigint 模式、数学模式。(2020)
+    - 很小的C包装的标准库
+  - 9: Remaxjs 1.0/1.1 使用真正的React构建跨平台小程序(微信和支付宝和头条小程序)
+  - 9: Java SE 13
+  - 9.3: [Android 10 29 Q](https://developer.android.com/about/versions/10/migration?hl=zh-cn)
+    - 屏幕边缘手势导航（各大厂商早就实现了）
+    - 分区储存
+    - 后台应用不能启动一个新的Activity
+    - 新增后台访问位置信息权限，无则不可以（ACCESS_BACKGROUND_LOCATION）
+    - 应用必须具有 READ_PRIVILEGED_PHONE_STATE 特许权限才能访问设备的不可重置标识符（包含 IMEI 和序列号），普通应用基本是不可以的
+    - 除非您的应用是默认输入法 (IME) 或是目前处于焦点的应用，否则它无法访问 Android 10 或更高版本平台上的剪贴板数据。
+  - 9.18: React Native 0.61 （React 16.9）
+  - Fast Refresh 支持 函数组件和Hooks
+  - 9.19: iOS 13 (iPhone 6-11 / iPod 7)
+  - 12.11: Flutter 1.12 解决许多性能上的问题，绘制更加流程
+- 2020
+  - 1.8: Taro 2.0 CLI迁移至 Webpack来区分编译平台
+  - 2.6: React 16.13 Concurrent Mod 实验特性 
+  - 3: Java SE 14
+  - 3: NextJS 9.3 全域scss和css的模块支持
+  - 3.26: React Native 0.62: 默认支持 Flipper 调试移动应用的开发工具
+  - 5.5: Remaxjs 2.0 支持 web 应用，构建工具rollup 切换至 Webpack
+  - 4.21: [Node 14](https://segmentfault.com/a/1190000022447139)
+    - 诊断报告变得稳定
+    - 实验性异步本地存储API
+    - 流
+    - 实验性 Web Assembly 系统接口
+    - 移除实验模块警告
+  - 6: EcmaScript 11
+    - 空值处理 ??
+    - 可选链 ?.
+    - Promise.allSettled
+    - import()
+    - 基本数据类型 BigInt
+    - globalThis
+  - 7.1: Taro 3.0 内置 React、Nerv、Vue2、Vue3 四种框架支持
+  - 7.6: React Native 0.63: LogBox 提示优化
+  - 7.28: NextJS 9.5 ISR 增量静态再生
+  - 8: 启动 weex 2: 不依赖系统UI，开发自绘引擎
+  - 9: vite 1 基于浏览器原生 ESM 的开发服务器
+    - 利用浏览器去解析imports,在服务器按需编译返回
+    - 开发环境用esbuild
+    - 生成环境用rollup
+    - 支持热更新
+  - 9: Java SE 15
+  - 9.8: [Android 11 30 R](https://developer.android.com/about/versions/11/migration?hl=zh-cn)
+    - 单次授权（权限只给这一次）
+    - 自动重置权限-几个月用户未与应用交互，将回收应用权限
+    - 支持瀑布屏API
+    - 新增前台服务类型属性，必须指明为camera和microphone才能访问麦克风，在后台运行时启动的前台服务无法访问麦克风和相机，除非具备后台访问权限
+    - 软件包可见性-不是所有应用都对软件可见了
+    - 应用退出原因 api
+    - 资源加载器ResourcesLoader-可用做换肤和插件化
+  - 9.16: iOS 14 (iPhone 6-12 / iPod 7)
+  - 9.18: Vue 3.0 支持组合式api
+  - 10.20: React 17 小修补为 18做铺垫
+  - 10.27: NextJS 10
+- 2021
+  - 2.17: vite 2 发布
+  - 3: Java SE 16
+  - 3.4: Flutter 2.0 对周边生态的支持
+  - 3.12: React Native 0.64 
+    - iOS 平台支持 Hermes。属于实验性质
+    - Hermes 支持 Proxy
+    - 支持 React 17
+  - 4.8: Taro 3.2 正式支持 React Native
+  - 4.19: Remaxjs 2.13 支持React17
+  - 4.21: [Node 16](https://zhuanlan.zhihu.com/p/366819335)
+    - Timers Promise API
+    - btoa 与 atob, 与浏览器环境保持一致
+    - 底层依赖升级
+  - 6: EcmaScript 12
+    - String.prototype.replaceAll
+    - Promise.any
+    - WeakRefs
+    - ||=,  &&=, ??= 
+    - 数字分隔符 1_000_000_000
+  - 6.16: NextJS 11	 支持webpack5,实时写作预览
+  - 8.17: React Native 0.65。 Hermes 0.8.1， Hades并发垃圾和回收期，提高CPU负载。一些性能改进
+  - 9: Java SE 17 (LTS)
+  - 9.21: iOS 15 (iPhone 6-13 / iPod 7)
+  - 10.4: [Android 12](https://developer.android.com/about/versions/12?hl=zh-cn)
+    - 全新的设计语言Material You，用户可以自定义UI。用户体验上有许多改进
+    - 访问剪切板会提示通知
+    - 用户可以要求您的应用只能访问大致位置信息。
+    - 存储分区默认处于活跃状态
+  - 11.27: NextJS 12 增加rust编译器，ESM模块支持
+- 2022
+  - 3: Java SE 18
+  - 3.4: Taro 3.4 支持 Preact，减小React运行时大小。支持Vue 3.2
+  - 3.28 React 18 主要是优先级可中断渲染任务的api
+  - 3.30 React Native 0.68
+    - 升级 Node 16
+    - Android gradle 7 强制 jdk 11
+    - Android compile 和 target sdk 31
+    - 支持 Fabric Renderer 和 TurboModule
+  - 4.19: [Node 18](https://zhuanlan.zhihu.com/p/502951532)
+    - 内置了新的请求库，它遵循 Fetch 规范，底层就是基于 undici 来实现的
+    - Test Runner
+    - Build-time user-land snapshot。js 直接编译成 v8 snapshot，从而可以极大的提速启动时间。
+    - Node.js 加载器团队也在继续开发 ECMAScript 模块加载器实现
+  - 5.12: Flutter 3 支持 Windows、macOS、Linux
+  - 6: [EcmaScript 13](https://www.51cto.com/article/715706.html)
+    - 顶层 await 
+    - .at()索引值对应值的方法
+    - findLast() 和 findLastIndex()
+    - Object.hasOwn()
+    - error.cause
+    - RegExp 匹配索引
+    - Class的 类字段声明,私有方法和字段,静态类字段和静态私有方法,类静态块,in检查私有字段
+  - 6.21: React Native 0.69
+    - 支持 React 18
+    - 默认与Hermes引擎同步升级
+    - 支持是C++ 17
+  - 7.13: vite 3
+    - 改进的 WebSocket 连接策略
+    - 冷启动改进
+    - ESM 成为 SSR 构建的默认格式
+    - 减小构建体积
+  - 7.26: Taro 3.5 编译提速，React Native 0.68, React 18
+  - 8.15: [Android 13](https://developer.android.com/about/versions/13?hl=zh-cn)
+    - 新的运行时通知权限：POST_NOTIFICATIONS
+    - 从剪贴板中隐藏敏感内容
+    - 停止使用共享用户 ID
+    - 高优先级 Firebase Cloud Message (FCM) 配额，提高送达率
+    - 使用 JobScheduler 改进预提取作业处理
+  - 9: iOS 16 (iPhone 6-14)
+
+
+# 参考文章
+- [《编程时间简史系列》JavaScript 模块化的历史进程](https://segmentfault.com/a/1190000023017398)
+- [JavaScript 20年](https://cn.history.js.org/)
+- [Android 虚拟机进化史](https://blog.csdn.net/u011033906/article/details/117806349)
+- [V8 十年故事：从农场诞生的星球最强 JS 引擎](https://www.infoq.cn/article/v8-10-years)
+- [JavaScript 引擎 V8 执行流程概述](https://cloud.tencent.com/developer/article/1554112)
+- [认识 V8 引擎](https://zhuanlan.zhihu.com/p/27628685)
+- [Linux发展历史年表](https://www.linuxprobe.com/linux-historical-chronology.html)
+- [2017，我们从Node.js的版本号大飞跃谈起](https://www.techug.com/post/2017-node-js/)
