@@ -1,0 +1,283 @@
+# 语言历史
+# 发展历史
+- 1991
+  - 9.1: Linux 0.01 发布
+- 1992
+  - 1.5:  Linux v0.12 release 版本的内核重新以GUN GPL的协议发布。原来的许可证是禁止任何商业用途的。通过这次协议变更，发布和出售修改或未修改版的Linux成为了可能
+  - 5.21: Peter MacDonald 发布第一个独立的Linux安装包SLS。可以通过软盘安装，包括比较前沿的TCP-IP网络支持和X Window系统。建议至少预留10M的磁盘空间来安装。
+- 1993
+  - 6.17:  Slackware Linux由Patrick Volkerding发布。Slackware被认为是第一个取得广泛成功的Linux发行版
+  - 8.16: Ian Murdock（Debian中的'ian'）发布了第一个Debian Linux的发行版。Debian是最有影响力的Linux发行版之一，是MEPIS，Mint，Ubuntu和很多其它发行版的鼻祖。
+- 1994
+  - 3.14: Linux 内核V1.0发布。它支持基于i386单处理器的计算机系统。这3年来，内核代码库已经增长到了176,250行
+- 1995
+  - xx: JDK beta
+  - 5: Mocha (LiveScript) Brendan Eich只用了10天，就设计完成了这种语言的第一版设计
+    - 基本语法：借鉴C语言和Java语言。
+    - 数据结构：借鉴Java语言，包括将值分成原始值和对象两大类。
+    - 函数的用法：借鉴Scheme语言和Awk语言，将函数当作第一等公民，并引入闭包。
+    - 原型继承模型：借鉴Self语言（Smalltalk的一种变种）。
+    - 正则表达式：借鉴Perl语言。
+    - 字符串和数组处理：借鉴Python语言。
+  - 9: LiveScript(JavaScript)
+  - 12: JavaScript (Netscape 公司与 Sun 公司联合发布)
+- 1996
+  - 1: JDK 1
+  - 3: Navigator 2.0 浏览器正式内置了 JavaScript 1.0 脚本语言
+  - 5.9: Linux 吉祥物企鹅形象确定
+  - 6.9: Linux 内核V2.0发布
+  - 8: JScript (微软发明的JS相近的语言，内置在IE3.0)
+- 1997
+  - 2: JDK 1.1
+  - 7: EcmaScript 1.0(JS标准化)
+    - 对象类型的规范引入了属性标记的概念，用于控制如何访问或修改各个属性
+    - 引入内部方法概念。用于定义对象基本行为的算法
+    - var 变量、if、while、for、for in、cotinue、break、return、with
+    - 基础类型(undefined、null、bool、string、number)、原型链对象、函数对象
+- 1998
+  - 6: EcmaScript 2.0
+  - 12: J2SE 1.2
+- 1999
+  - 12: EcmaScript 3.0
+    - try-catch-finally 和异常对象
+    - instanceof 和 in 运算符
+    - 对象原型方法: hasInstance, hasOwnProperty, isPrototypeOf, propertyIsEnumerable
+    - 对象字面量、数组字面量、正则表达式字面量
+    - 数组方法: concat, slice, push, pop, shift, splice, unshift。正则方法等
+- 2000
+  - 5: J2SE 1.3
+- 2001
+  - xx: Douglas Crockford提出了JSON格式，用于取代XML格式，进行服务器和网页之间的数据交换。JavaScript可以原生支持这种格式，不需要额外部署代码
+- 2002
+  - 2: J2SE 1.4
+- 2003:
+- 2004
+  - 9: J2SE 1.5
+- 2005
+- 2006
+  - xx: Google推出 Google Web Toolkit 项目（缩写为GWT），提供Java编译成JavaScript的功能，开创了将其他语言转为JavaScript的先河
+  - xx: Google 启动 v8 js引擎项目
+  - 12: Java SE 6
+- 2007
+  - 10: EcmaScript 4.0 草案，有分歧
+  - 12: Android SDK 发布
+    - Dalvik 虚拟机
+      - 体积小，占用内存空间小；
+      - 专有的DEX可执行文件格式，体积更小，执行速度更快；
+      - 常量池采用32位索引值，寻址类方法名、字段名、常量更快；
+      - 基于寄存器架构，并拥有一套完整的指令系统；
+      - 提供了对象生命周期管理、堆栈管理、线程管理、安全和异常管理以及垃圾回收等重要功能；
+      - 所有的Android程序都运行在Android系统进程里，每个进程对应着一个Dalvik虚拟机实例
+- 2008
+  - 7: EcmaScript 4太激进，现有功能改善的作为 EcmaScript 5(3.1) Harmony（和谐)
+  - 9.2: V8 编译器诞生(直接编译成机器码执行)
+    - Full-Codegen 将代码一次性编译成未优化的机器码执行
+    - V8 只支持 ia32 和 ARM 指令集
+    - 使用 SCons 作为构建系统。
+- 2009
+  - xx: V8 引入一个名为 Irregexp 的正则表达式引擎, 支持x64
+  - 4: CommonJs 规范 Modules1.0
+  - 5: Node.js项目诞生 v0.x
+    - 连接常见的POSIX接口，JS回调，简化的浏览器事件循环
+    - V8引擎, CommonJs模块加载器,C实现的平台非阻塞版本模块(文件和网络操作)
+  - 9: CommonJS 模块社区激进派的 James Burke 在 2009 年 9 月开发出了 RequireJS 这一模块加载器，以实践证明自己的观点
+  - 12: EcmaScript 5 发布
+    - NaN、Infinity、undefined 都是常量了，不可更改。
+    - 添加 JSON 序列化和反序列化
+    - 函数新增 bind 方法
+    - 数组添加了一系列方法: every, filter, forEach, indexOf, lastIndexOf, map, reduce, reduceRight, some
+    - Array.isArray 
+    - 对象新增一系列方法。Object.keys(), Object.create(), Object.defineProperty, Object.defineProperties...
+    - 对象的属性可以添加配置。writeable, value, enumerable, configurable, get, set
+    - 严格模式
+      - 函数里没有隐式的全局变量了，你要创建全局变量必须是显式的。比如想用 a = 1 创建全局变量是不行的。
+      - this 不会默认指向全局对象（比如 window 或者 global）了。
+      - call 和 apply 也不会默认使用全局对象了。
+      - 不准用 with
+      - 如果一个属性的 writeable 是 false，那么你给这个属性赋值就会报错。
+      - 如果一个属性的 configurable 是 false，那么你 delete 这个属性就会报错。
+      - 对 eval 和 arguments 做出了限制。以下代码每行都会报错
+      - arguments 只保存原始参数。对形参的赋值不会对 arguments 有影响。
+      - 不准用 arguments.caller 和 arguments.callee
+      - 不支持八进制字面量，比如 var a = 015 会报错。
+      - 对象字面量或者函数形参中，如果有重复的名字，就会报错。
+  - 12.3: Jeremy Ashkenas发布了CoffeeScript的最初版本。CoffeeScript可以被转化为JavaScript运行，但是语法要比JavaScript简洁。这开启了其他语言转为JavaScript的风潮
+- 2010
+  - xx: facebook的php出现xhp
+  - xx: V8 更新 
+    - 引入了全新的优化 JIT 编译器 Crankshaft,支持32 位 MIPS指令集
+    - JS在执行的过程中，V8内置的Profiler筛选出热点函数并且记录参数的反馈类型，然后交给 Crankshaft 来进行优化生成机器码
+  - 5.20: Android 2.2 
+    - Dalvik虚拟机也支持JIT
+- 2011
+  - xx: V8 更新
+    - 垃圾回收器性能得到了极大的改善
+    - V8 引入了隔离的概念，可以在一个进程中启动多个 V8 运行时实例，为在 Chrome 中实现轻量级的 Web Worker 铺平了道路
+    - 构建系统迁移，从 SCons 转向 GYP
+    - 支持 ES5 strict mode
+  - xx: Google发布了Dart语言，目的是为了结束JavaScript语言在浏览器中的垄断，提供更合理、更强大的语法和功能。Chromium浏览器有内置的Dart虚拟机，可以运行Dart程序，但Dart程序也可以被编译成JavaScript程序运行
+  - 2: AMD 规范发布(RequireJS社区)
+  - 6: EcmaScript 5.1
+  - 7: Java SE 7
+  - 7: JetBrains 推出 Kotlin 项目
+- 2012
+  - xx: V8 更新。基准测试年
+  - xx: AngularJS 1.0
+  - xx: 微软发布TypeScript语言。该语言被设计成JavaScript的超集，这意味着所有JavaScipt程序，都可以不经修改地在TypeScript中运行。同时，TypeScript添加了很多新的语法特性，主要目的是为了开发大型程序，然后还可以被编译成JavaScript运行
+  - xx: asm 规范
+> Mozilla基金会提出asm.js规格。asm.js是JavaScript的一个子集，所有符合asm.js的程序都可以在浏览器中运行，它的特殊之处在于语法有严格限定，可以被快速编译成性能良好的机器码。这样做的目的，是为了给其他语言提供一个编译规范，使其可以被编译成高效的JavaScript代码。同时，Mozilla基金会还发起了Emscripten项目，目标就是提供一个跨语言的编译器，能够将LLVM的位代码（bitcode）转为JavaScript代码，在浏览器中运行。因为大部分LLVM位代码都是从C / C++语言生成的，这意味着C / C++将可以在浏览器中运行。此外，Mozilla旗下还有LLJS（将JavaScript转为C代码）项目和River Trail（一个用于多核心处理器的ECMAScript扩展）项目。目前，在可以被编译成JavaScript的语言列表上，共有将近40种语言
+- 2013
+  - xx: ECMA正式推出JSON的国际标准，这意味着JSON格式已经变得与XML格式一样重要和正式了
+  - xx: tj开始玩generator，编写co这个generator执行器，并开始了Koa
+  - 3: EcmaScript 6 草案冻结
+  - 10.31: [Android 4.4](https://developer.android.com/about/versions/kitkat?hl=zh-cn)
+    - ART是一项实验性功能，默认情况下不激活。Android Runtime（ART）作为新的运作环境，在安装应用程序时，它会使用提前编译（AOT）来把应用程序字节码完全编译为机器语言
+  - 12: EcmaScript 6 草案发布
+- 2014
+  - xx: V8 更新
+    - V8 通过并发编译将 JIT 编译的一些工作从主线程中移除，以此来减少堵塞，并显著提升了性能。后来，我们推出了名为 TurboFan 的新优化编译器的初始版本。
+    - 继 Chromium 之后，V8 转向了另一个构建系统 GN
+    - 在源代码控制方面，V8 从 SVN 迁移到了 Git
+  - 3: Java SE 8 (LTS)
+  - 9: UMD 兼容的统一: 美籍华裔 Homa Wong 提交了 UMD 第一个版本的代码
+  - 11.12: [Android 5.0 21 Lollipop](https://developer.android.com/about/versions/lollipop?hl=zh-cn)
+    - ART 虚拟机
+      - 预先 (AOT) 编译
+      - 垃圾回收方面的优化
+      - 开发和调试方面的优化
+- 2015
+  - xx: V8 更新
+    - 实现了代码缓存和脚本流，大大加快了网页加载速度
+    - 同年晚些时候，开始了新解释器 Ignition 的开发工作
+    - 同年12月分，第一个 WebAssembly 原型来到了 V8 上
+  - 1: 6to5和EsNext团队开发 babel
+  - 2.6: Node 0.12: 支持 generator
+  - 4: Flutter(测试版) 会议公布， 支持 Android
+  - 6: EcmaScript 6(2015) 发布
+    - class
+    - Module
+    - Function: 箭头函数, 参数展开运算符，函数参数默认值，函数生成器
+    - 函数参数默认值
+    - 模板字符串
+    - 解构赋值
+    - 延展操作符(Spread operator)
+    - 对象属性简写
+    - Promise
+    - Iterator
+    - 支持 let 与 const
+  - 6: Mozilla 在 asm.js 的基础上发布 WebAssembly 项目。这是一种JavaScript语言编译后的二进制格式，类似于Java的字节码，有利于移动设备加载JavaScript脚本，解析速度提高了20+倍。这意味着将来的软件，会发布JavaScript二进制包
+  - 8.22: Koa 1.0 :通过co + generator实现同步逻辑，那时候co还是基于thunkfy的
+  - 9.8: Node 4 :v8 支持ES6
+- 2016
+  - xx: V8 更新
+    - 最后一组 ES2015（以前称为“ES6”）特性集以及一些 ES2016 特性
+    - 推出新的 Ignition 和 TurboFan 管道
+      - Ignition 解析AST生成字节码去执行
+      - TurboFan 根据字节码的执行反馈去根据基于字节码生成优化的机器码
+    - 启动了 Orinoco 项目，这是一个针对 V8 的并发垃圾回收器，旨在减少主线程垃圾回收时间
+    - 出于调试的目的，V8 检查器从 Chromium 迁移到了 V8，允许任何 V8 嵌入器（不仅仅是 Chromium）使用 Chrome DevTools 来调试在 V8 中运行的 JavaScript
+    - WebAssembly 从原型转为了实验支持
+  - 2.15: Kotlin v1.0
+    - 具有很多现代（也有称下一代）静态编程语言的特性：如类型推断、多范式支持、可空性表达、扩展函数、模式匹配等
+  - 6: EcmaScript 7
+    - Array.prototype.includes()
+    - 求幂运算符(**)
+  - 8.22: [Android 7.0 24 Nougat](https://developer.android.com/about/versions/nougat/android-7.0?hl=zh-cn)
+    - 添加JIT，属于对AOT的一种补充机制
+      - 应用在安装的时候 dex 不会被编译
+      - 应用在运行时 dex 文件先通过解析器（Interpreter）后会被直接执行（这一步骤跟 Android 2.2 - Android 4.4之前的行为一致），与此同时，热点函数（Hot Code）会被识别并被 JIT 编译后存储在 jit code cache 中并生成 profile 文件以记录热点函数的信息。
+      - 手机进入 IDLE（空闲） 或者 Charging（充电） 状态的时候，系统会扫描 App 目录下的 profile 文件并执行 AOT 过程进行编译。
+  - 10.25: Node 7
+    - v8 实现了 async,await 无需规范落地就能够使用
+- 2017
+  - 4: V8 更新 5.9
+    - 默认情况下启用新的 Ignition 和 TurboFan 管道
+    - 推出了 Orinoco v1.0，包括并发标记、并发扫描、并行清理和并行压缩
+    - 正式将 Node.js 视为 V8 的一等嵌入器。从那以后，如果某些 V8 补丁无法通过 Node.js 测试套件的测试，就不能推出这些补丁
+    - V8 默认启用了 WebAssembly
+    - 实现了对 JavaScript 模块以及 ES2017 和 ES2018 完整特性集的支持（包括异步函数、共享内存、异步迭代，rest/spread 属性和 RegExp）
+    - 提供了对 JavaScript 代码覆盖的原生支持，并启动了 Web Tooling Benchmark，用以帮助我们衡量 V8 的优化对实际开发者工具以及这些工具所生成的 JavaScript 输出的性能的影响。我们可以借助用于跟踪 JavaScript 对象到 C++ DOM 对象的包装器来解决 Chrome 中长期存在的内存泄漏问题，并有效地处理 JavaScript 和 Blink 堆上对象的闭包传递。我们后来使用这个基础设施来提升开发者工具的堆快照能力
+  - EcmaScript 8
+    - async/await
+    - Object.values(), Object.entries(),Object.getOwnPropertyDescriptors()
+    - String padding: padStart()和padEnd()，填充字符串达到当前长度
+    - ShareArrayBuffer和Atomics对象，用于从共享内存位置读取和写入
+  - 9: Java SE 9	
+  - 11: 所有主流浏览器全部支持 WebAssembly，这意味着任何语言都可以编译成 JavaScript，在浏览器运行。
+- 2018
+  - xx: V8 更新
+    - 为 WebAssembly 发布了一个名为 Liftoff 的基线编译器，它大大减少了 WebAssembly 应用程序的启动时间，同时提供了可预测的性能
+    - 发布了 BigInt，一个新的 JavaScript 原始类型，可以实现任意精度的整数
+    - 实现了嵌入式内置函数，并可以对它们进行惰性反序列化，从而显著降低 V8 多个隔离的占用空间
+    - 可以让后台线程编译脚本字节码
+    - 启动了 Unified V8-Blink Heap 项目，可同步运行跨 V8 和 Blink 的垃圾回收。
+  - 3: Java SE 10
+  - 6: EcmaScript 9
+    - 异步迭代
+    - Promise.finally()
+    - ... Rest对象解构, Spread 对象展开
+    - 正则表达式命名捕获组,反向断言,dotAll模式,Unicode 转义
+    - 非转义序列的模板字符串
+  - 8.6: [Android 9 28 Pie](https://developer.android.com/about/versions/pie/android-9.0?hl=zh-cn)
+    - 在 ART 虚拟机的基础上 , 增加了 Cdex ( Compat Dex )机制
+  - 9: Java SE 11 (LTS)
+  - 12.4: Flutter 1.0 
+    - Dart 2.1
+- 2019
+  - 3: Java SE 12
+  - 6: EcmaScript 10
+    - Array.flat()和Array.flatMap()
+    - String.trimStart()和String.trimEnd(), String.prototype.matchAll
+    - Symbol.prototype.description
+    - Object.fromEntries
+    - 可选 Catch
+  - 7.9 [QuickJS 引擎](https://bellard.org/quickjs/)发布
+    - 小巧且易于嵌入：只需几个 C 文件，没有外部依赖，210 KiB 的 x86 代码用于一个简单的 hello world 程序。
+    - 启动时间极短的快速解释器
+    - 支持到ES2020标准，测试套件通过率百分百
+    - 可以将 Javascript 源代码编译为没有外部依赖的可执行文件。
+    - 使用引用计数（以减少内存使用并具有确定性行为）和循环删除的垃圾收集。
+    - 数学扩展：BigDecimal、BigFloat、运算符重载、bigint 模式、数学模式。(2020)
+    - 很小的C包装的标准库
+  - 9: Java SE 13
+- 2020
+  - 3: Java SE 14
+  - 6: EcmaScript 11
+    - 空值处理 ??
+    - 可选链 ?.
+    - Promise.allSettled
+    - import()
+    - 基本数据类型 BigInt
+    - globalThis
+  - 9: Java SE 15
+- 2021
+  - 3: Java SE 16
+  - 4.8: Taro 3.2 正式支持 React Native
+  - 6: EcmaScript 12
+    - String.prototype.replaceAll
+    - Promise.any
+    - WeakRefs
+    - ||=,  &&=, ??= 
+    - 数字分隔符 1_000_000_000
+  - 9: Java SE 17 (LTS)
+- 2022
+  - 3: Java SE 18
+  - 6: [EcmaScript 13](https://www.51cto.com/article/715706.html)
+    - 顶层 await 
+    - .at()索引值对应值的方法
+    - findLast() 和 findLastIndex()
+    - Object.hasOwn()
+    - error.cause
+    - RegExp 匹配索引
+    - Class的 类字段声明,私有方法和字段,静态类字段和静态私有方法,类静态块,in检查私有字段
+
+
+# 参考文章
+- [《编程时间简史系列》JavaScript 模块化的历史进程](https://segmentfault.com/a/1190000023017398)
+- [JavaScript 20年](https://cn.history.js.org/)
+- [Android 虚拟机进化史](https://blog.csdn.net/u011033906/article/details/117806349)
+- [V8 十年故事：从农场诞生的星球最强 JS 引擎](https://www.infoq.cn/article/v8-10-years)
+- [JavaScript 引擎 V8 执行流程概述](https://cloud.tencent.com/developer/article/1554112)
+- [认识 V8 引擎](https://zhuanlan.zhihu.com/p/27628685)
+- [Linux发展历史年表](https://www.linuxprobe.com/linux-historical-chronology.html)
+- [2017，我们从Node.js的版本号大飞跃谈起](https://www.techug.com/post/2017-node-js/)

@@ -161,6 +161,7 @@
   - 2: AMD 规范发布(RequireJS社区)
   - 6: EcmaScript 5.1
   - 7: Java SE 7
+  - 7: JetBrains 推出 Kotlin 项目
   - 10.12: iOS 5 (iPad 2 / iPhone 3,4 / iPod 3,4)
   - 10.4: PhoneGap代码交给Apache基金会，改名为Cordova
   - 10.18: Android 4.0
@@ -172,6 +173,7 @@
   - xx: asm 规范
 > Mozilla基金会提出asm.js规格。asm.js是JavaScript的一个子集，所有符合asm.js的程序都可以在浏览器中运行，它的特殊之处在于语法有严格限定，可以被快速编译成性能良好的机器码。这样做的目的，是为了给其他语言提供一个编译规范，使其可以被编译成高效的JavaScript代码。同时，Mozilla基金会还发起了Emscripten项目，目标就是提供一个跨语言的编译器，能够将LLVM的位代码（bitcode）转为JavaScript代码，在浏览器中运行。因为大部分LLVM位代码都是从C / C++语言生成的，这意味着C / C++将可以在浏览器中运行。此外，Mozilla旗下还有LLJS（将JavaScript转为C代码）项目和River Trail（一个用于多核心处理器的ECMAScript扩展）项目。目前，在可以被编译成JavaScript的语言列表上，共有将近40种语言
   - xx: Ben Alman 发布了基于任务的构建工具 Grunt
+  - 2: JetBrains 以 Apache 2 许可证开源此项目
   - 7.9: Android 4.1
   - 9.20: iOS 6 (iPad 2, mini / iPhone 3,4,5/ iPod 4,5) 
 - 2013
@@ -269,6 +271,8 @@
     - WebAssembly 从原型转为了实验支持
   - xx: svelte.js 模板语法，编译响应式更新dom（像vue）
   - xx: angluarjs(1.0) 在html中写模板语法，响应式更新dom数据
+  - 2.15: Kotlin v1.0
+    - 具有很多现代（也有称下一代）静态编程语言的特性：如类型推断、多范式支持、可空性表达、扩展函数、模式匹配等
   - 4: Weex 开源 1.0: 基于原生渲染架构
   - 6: EcmaScript 7
     - Array.prototype.includes()
@@ -527,6 +531,7 @@
     - ESM 成为 SSR 构建的默认格式
     - 减小构建体积
   - 7.26: Taro 3.5 编译提速，React Native 0.68, React 18
+  - 8.11: Astro 1.0 正式发布，现代化静态站点生成器
   - 8.15: [Android 13](https://developer.android.com/about/versions/13?hl=zh-cn)
     - 新的运行时通知权限：POST_NOTIFICATIONS
     - 从剪贴板中隐藏敏感内容
