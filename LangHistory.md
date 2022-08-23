@@ -1,40 +1,81 @@
 # 语言历史
-# 发展历史
+
+- 1967: [BCPL 语言](https://zh.m.wikipedia.org/zh-hans/BCPL)。 马丁·理察德（Martin Richards）设计的 "无类型"语言，仅能操作一种数据类型([机器字](<https://zh.m.wikipedia.org/zh-hans/%E5%AD%97_(%E8%AE%A1%E7%AE%97%E6%9C%BA)>))
+- 1970: [B 语言](https://zh.m.wikipedia.org/zh-hans/B%E8%AF%AD%E8%A8%80) 。肯·汤普逊为运行在[PDP-7](https://zh.m.wikipedia.org/zh-hans/PDP-7)上的首个 Unix 系统设计了一个精简版的 BCPL
+- 1972: [C 语言](https://zh.wikipedia.org/wiki/C%E8%AF%AD%E8%A8%80)
+  - Unix 最早运行在 PDP-7 上，是以[汇编语言](https://zh.m.wikipedia.org/zh-hans/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80)写成。在 PDP-11 出现后，丹尼斯·里奇与肯·汤普逊着手将 Unix 移植到 PDP-11 上，无类型的语言在 PDP-11 上愈发显得不合适。PDP-11 提供了多种不同规格大小的基本对象：一字节长的字符，两字节长的整型数以及四字节长的浮点数。B 语言无法处理这些不同规格大小的对象，也没有提供单独的操作符去操作它们。
+  - C 语言最初尝试通过向 B 语言中增加数据类型的想法来处理那些不同类型的数据。和大多数语言一样，在 C 中，每个对象都有一个类型以及一个值；类型决定了可用于值的操作的含义，以及对象占用的存储空间大小。
+- 1973: Unix[作业系统](https://zh.m.wikipedia.org/zh-hans/%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1)的核心正式用 C 语言改写，这是 C 语言第一次应用在作业系统的核心编写上
+- 1975: C 语言开始移植到其他机器上使用。
+  - 史蒂芬·强生（英语：Stephen C. Johnson）实现了一套“[可移植编译器](https://zh.m.wikipedia.org/zh-hans/%E5%8F%AF%E7%A7%BB%E6%A4%8DC%E7%B7%A8%E8%AD%AF%E5%99%A8)”，这套编译器修改起来相对容易，并且可以为不同的机器生成代码。从那时起，C 在大多数计算机上被使用，从最小的微型计算机到与 CRAY-2 超级计算机。C 语言很规范，即使没有一份正式的标准，你也可以写出 C 程序，这些程序无须修改就可以运行在任何支持 C 语言和最小运行时环境的计算机上。
+- 1978: K&R C 标准。丹尼斯·里奇和布莱恩·柯林汉合作出版了《C 程序设计语言》的第一版。书中介绍的 C 语言标准也被 C 语言程式设计师称作“K&R C”（柯里 C），第二版的书中也包含了一些 ANSI C 的标准。主要引入了以下语言特性:
+  - 标准 I/O 库
+  - 结构（struct）类型
+  - 长整数（long int）类型
+  - 无符号整数（unsigned int）类型
+  - 把运算符=+和=-改为+=和-=。因为=+和=-会使得编译器不知道使用者要处理 i = -10 还是 i =- 10，使得处理上产生混淆。
+- 1979: C with Classes。 “包含‘类’的 C 语言”），作为 C 语言的增强版出现
+  - C++的历史可以追溯到 1979 年，当时[Bjarne Stroustrup](http://www.stroustrup.com/)（译者注：C++之父）正在准备他的博士毕业论文，他有机会使用一种叫做 Simula 的语言。顾名思义，Simula 语言的主要作用是仿真。Simula 67 是 Simula 语言的一种变种，被公认是首款支持面向对象的语言。Stroustrup 发现面向对象的思想对于软件开发非常有用，但是因 Simula 语言执行效率低，其实用性不强。
+  - 不久之后，Stroustrup 开始着手“C with Classes”的研发工作，“C with Classes”表明这种新语言是在 C 基础上研发的，是 C 语言的超集。C 语言以其高可移植性而广受好评，且程序执行速度以及底层函数的性能不受程序移植的影响，Stroustrup 要做的就是将面向对象的思想引入 C 语言。新语言的初始版本除了包括 C 语言的基本特征之外，还具备类、简单继承、内联机制、函数默认参数以及强类型检查等特性。
+  - Bjarne Stroustrup 的第一款“C with classes”编译器叫 Cfront，这个名字源自一个叫做 Cpre 的 C 编译器。Cfront 的机理是把“C with classes”的代码翻译成原生 C 代码。颇为有趣的一点是 Cfront 源码大部分是由“C with Classes”编写，这使得 Cfront 成为了一种自足执行的编译器（可以编译自身源码的编译器）。由于很难整合 C++的异常机制，Cfront 在 1993 年退出了历史的舞台，但是它对以后 C++编译器以及 Unix 操作系统的实现都产生了深远的影响。
+- 1983: C++。“C with Classes”语言更名为 C++。C 语言中“++”运算子的作用是对一个变量进行递增操作，由此我们多少可以知晓 Stroustrup 对这种新语言的定位。这个时期，许多重要的特性被加入，其中包括虚函数、函数重载、引用机制（符号为&）、const 关键字以及双斜线的单行注释（从[BCPL](<(https://zh.m.wikipedia.org/zh-hans/BCPL)>)语言引入）。
+- 1985: 《C++ Programming Language》出版。同年，C++的商业版本问世。由于当时 C++并没有正式的语言规范，因此《C++ Programming Language》成了业界的重要参考
+- 1989:
+  - xx: C89。 C 语言被[美国国家标准协会](https://zh.m.wikipedia.org/zh-hans/%E7%BE%8E%E5%9C%8B%E5%9C%8B%E5%AE%B6%E6%A8%99%E6%BA%96%E5%8D%94%E6%9C%83)（ANSI）标准化，编号为 ANSI X3.159-1989。这个版本又称为 C89。标准化的一个目的是扩展 K&R C，增加了一些新特性。
+    - void 函数
+    - 函数可以返回 struct 或 union 类型
+    - void \* 数据类型
+  - xx: C++再次版本更新，这次更新引入了多重继承、保护成员以及静态成员等语言特性。
+- 1990:
+  - xx: C90。[国际标准化组织](https://zh.m.wikipedia.org/zh-hans/%E5%9B%BD%E9%99%85%E6%A0%87%E5%87%86%E5%8C%96%E7%BB%84%E7%BB%87)（ISO）成立 ISO/IEC JTC1/SC22/WG14 工作组，来规定国际标准的 C 语言，通过对 ANSI 标准的少量修改，最终制定了 ISO 9899:1990，又称为 C90。随后，ANSI 亦接受国际标准 C，并不再发展新的 C 标准
+    - 增加了真正的标准库
+    - 新的预处理命令与特性
+    - 函数原型允许在函数申明中指定参数类型
+    - 一些新的关键字，包括 const、volatile 与 signed
+    - 宽字符、宽字符串与多字节字符
+    - 对约定规则、声明和类型检查的许多小改动与澄清
+  - xx: 《Annotated C++ Reference Manual》发布。同年，Borland 公司的商业版 Turbo C++编译器问世。Turbo C++附带了大量函数库，这一举措对 C++开发产生了极为深远的影响。虽然 Turbo C++上一个稳定的版本发布于 2006 年，但当前该编译器仍被广泛使用。
 - 1991
   - 9.1: Linux 0.01 发布
 - 1992
-  - 1.5:  Linux v0.12 release 版本的内核重新以GUN GPL的协议发布。原来的许可证是禁止任何商业用途的。通过这次协议变更，发布和出售修改或未修改版的Linux成为了可能
-  - 5.21: Peter MacDonald 发布第一个独立的Linux安装包SLS。可以通过软盘安装，包括比较前沿的TCP-IP网络支持和X Window系统。建议至少预留10M的磁盘空间来安装。
+  - 1.5: Linux v0.12 release 版本的内核重新以 GUN GPL 的协议发布。原来的许可证是禁止任何商业用途的。通过这次协议变更，发布和出售修改或未修改版的 Linux 成为了可能
+  - 5.21: Peter MacDonald 发布第一个独立的 Linux 安装包 SLS。可以通过软盘安装，包括比较前沿的 TCP-IP 网络支持和 X Window 系统。建议至少预留 10M 的磁盘空间来安装。
 - 1993
-  - 6.17:  Slackware Linux由Patrick Volkerding发布。Slackware被认为是第一个取得广泛成功的Linux发行版
-  - 8.16: Ian Murdock（Debian中的'ian'）发布了第一个Debian Linux的发行版。Debian是最有影响力的Linux发行版之一，是MEPIS，Mint，Ubuntu和很多其它发行版的鼻祖。
+  - 6.17: Slackware Linux 由 Patrick Volkerding 发布。Slackware 被认为是第一个取得广泛成功的 Linux 发行版
+  - 8.16: Ian Murdock（Debian 中的'ian'）发布了第一个 Debian Linux 的发行版。Debian 是最有影响力的 Linux 发行版之一，是 MEPIS，Mint，Ubuntu 和很多其它发行版的鼻祖。
 - 1994
-  - 3.14: Linux 内核V1.0发布。它支持基于i386单处理器的计算机系统。这3年来，内核代码库已经增长到了176,250行
+  - xx: WG14(C 语言)工作小组之后又于 1994 年，对 1985 年颁布的标准做了两处技术修订（缺陷修复）和一个补充（扩展）。下面是 1994 年做出的所有修改：
+    - 3 个新的标准库头文件 iso646.h、wctype.h 和 wchar.h
+    - 几个新的记号与预定义宏，用于对国际化提供更好的支持
+    - printf/sprintf 函数一系列新的格式代码
+    - 大量的函数和一些类型与常量，用于多字节字符和宽字节字符
+  - 3.14: Linux 内核 V1.0 发布。它支持基于 i386 单处理器的计算机系统。这 3 年来，内核代码库已经增长到了 176,250 行
 - 1995
   - xx: JDK beta
-  - 5: Mocha (LiveScript) Brendan Eich只用了10天，就设计完成了这种语言的第一版设计
-    - 基本语法：借鉴C语言和Java语言。
-    - 数据结构：借鉴Java语言，包括将值分成原始值和对象两大类。
-    - 函数的用法：借鉴Scheme语言和Awk语言，将函数当作第一等公民，并引入闭包。
-    - 原型继承模型：借鉴Self语言（Smalltalk的一种变种）。
-    - 正则表达式：借鉴Perl语言。
-    - 字符串和数组处理：借鉴Python语言。
+  - 5: Mocha (LiveScript) Brendan Eich 只用了 10 天，就设计完成了这种语言的第一版设计
+    - 基本语法：借鉴 C 语言和 Java 语言。
+    - 数据结构：借鉴 Java 语言，包括将值分成原始值和对象两大类。
+    - 函数的用法：借鉴 Scheme 语言和 Awk 语言，将函数当作第一等公民，并引入闭包。
+    - 原型继承模型：借鉴 Self 语言（Smalltalk 的一种变种）。
+    - 正则表达式：借鉴 Perl 语言。
+    - 字符串和数组处理：借鉴 Python 语言。
   - 9: LiveScript(JavaScript)
   - 12: JavaScript (Netscape 公司与 Sun 公司联合发布)
 - 1996
   - 1: JDK 1
   - 3: Navigator 2.0 浏览器正式内置了 JavaScript 1.0 脚本语言
   - 5.9: Linux 吉祥物企鹅形象确定
-  - 6.9: Linux 内核V2.0发布
-  - 8: JScript (微软发明的JS相近的语言，内置在IE3.0)
+  - 6.9: Linux 内核 V2.0 发布
+  - 8: JScript (微软发明的 JS 相近的语言，内置在 IE3.0)
 - 1997
   - 2: JDK 1.1
-  - 7: EcmaScript 1.0(JS标准化)
+  - 7: EcmaScript 1.0(JS 标准化)
     - 对象类型的规范引入了属性标记的概念，用于控制如何访问或修改各个属性
     - 引入内部方法概念。用于定义对象基本行为的算法
     - var 变量、if、while、for、for in、cotinue、break、return、with
     - 基础类型(undefined、null、bool、string、number)、原型链对象、函数对象
 - 1998
+  - xx: C++98。C++标准委员会发布了 C++语言的第一个国际标准—[ISO/IEC 14882:1998](http://www.iso.org/iso/catalogue_detail.htm?csnumber=25845)，该标准即为大名鼎鼎的 C++98。C++98 的提出，《The Annotated C++ Reference Manual》功不可没。同时，1979 年开始研发的[标准模板库](http://www.cplusplus.com/reference/stl/)（Standard Template Library，STL）也被纳入了该版标准中
   - 6: EcmaScript 2.0
   - 12: J2SE 1.2
 - 1999
@@ -45,48 +86,49 @@
     - 对象字面量、数组字面量、正则表达式字面量
     - 数组方法: concat, slice, push, pop, shift, splice, unshift。正则方法等
 - 2000
+  - 3: C99。《标准修正案一》在 1994 年为 C 语言建立了一个新标准，但是只修正了一些 C89 标准中的细节和增加更多更广的国际字符集支持。不过，这个标准引出了 1999 年[ISO 9899:1999](https://zh.m.wikipedia.org/zh-hans/C99)的发表。它通常被称为 C99。C99 被 ANSI 于 2000 年 3 月采用。
   - 5: J2SE 1.3
 - 2001
-  - xx: Douglas Crockford提出了JSON格式，用于取代XML格式，进行服务器和网页之间的数据交换。JavaScript可以原生支持这种格式，不需要额外部署代码
+  - xx: Douglas Crockford 提出了 JSON 格式，用于取代 XML 格式，进行服务器和网页之间的数据交换。JavaScript 可以原生支持这种格式，不需要额外部署代码
 - 2002
   - 2: J2SE 1.4
-- 2003:
+- 2003: [C++03](http://www.iso.org/iso/catalogue_detail.htm?csnumber=38110)。标准委员会针对 98 版本中存在的诸多问题进行了修订，修订后发布了 C++03。
 - 2004
   - 9: J2SE 1.5
-- 2005
+- 2005: C++标准委员会发布了一份技术报告（Technical Report，TR1）详细说明了计划引入 C++的新特性。这个新标准被非正式地命名为 C++0x，因为其预计会在本世纪第一个十年的某个时间发布。讽刺的是，直到 2011 年年中该标准才面世，相应的技术文档也随之出炉，一些编译器厂商也开始试验性地支持这些新特性。
 - 2006
-  - xx: Google推出 Google Web Toolkit 项目（缩写为GWT），提供Java编译成JavaScript的功能，开创了将其他语言转为JavaScript的先河
-  - xx: Google 启动 v8 js引擎项目
+  - xx: Google 推出 Google Web Toolkit 项目（缩写为 GWT），提供 Java 编译成 JavaScript 的功能，开创了将其他语言转为 JavaScript 的先河
+  - xx: Google 启动 v8 js 引擎项目
   - 12: Java SE 6
 - 2007
   - 10: EcmaScript 4.0 草案，有分歧
   - 12: Android SDK 发布
     - Dalvik 虚拟机
       - 体积小，占用内存空间小；
-      - 专有的DEX可执行文件格式，体积更小，执行速度更快；
-      - 常量池采用32位索引值，寻址类方法名、字段名、常量更快；
+      - 专有的 DEX 可执行文件格式，体积更小，执行速度更快；
+      - 常量池采用 32 位索引值，寻址类方法名、字段名、常量更快；
       - 基于寄存器架构，并拥有一套完整的指令系统；
       - 提供了对象生命周期管理、堆栈管理、线程管理、安全和异常管理以及垃圾回收等重要功能；
-      - 所有的Android程序都运行在Android系统进程里，每个进程对应着一个Dalvik虚拟机实例
+      - 所有的 Android 程序都运行在 Android 系统进程里，每个进程对应着一个 Dalvik 虚拟机实例
 - 2008
-  - 7: EcmaScript 4太激进，现有功能改善的作为 EcmaScript 5(3.1) Harmony（和谐)
+  - 7: EcmaScript 4 太激进，现有功能改善的作为 EcmaScript 5(3.1) Harmony（和谐)
   - 9.2: V8 编译器诞生(直接编译成机器码执行)
     - Full-Codegen 将代码一次性编译成未优化的机器码执行
     - V8 只支持 ia32 和 ARM 指令集
     - 使用 SCons 作为构建系统。
 - 2009
-  - xx: V8 引入一个名为 Irregexp 的正则表达式引擎, 支持x64
+  - xx: V8 引入一个名为 Irregexp 的正则表达式引擎, 支持 x64
   - 4: CommonJs 规范 Modules1.0
-  - 5: Node.js项目诞生 v0.x
-    - 连接常见的POSIX接口，JS回调，简化的浏览器事件循环
-    - V8引擎, CommonJs模块加载器,C实现的平台非阻塞版本模块(文件和网络操作)
+  - 5: Node.js 项目诞生 v0.x
+    - 连接常见的 POSIX 接口，JS 回调，简化的浏览器事件循环
+    - V8 引擎, CommonJs 模块加载器,C 实现的平台非阻塞版本模块(文件和网络操作)
   - 9: CommonJS 模块社区激进派的 James Burke 在 2009 年 9 月开发出了 RequireJS 这一模块加载器，以实践证明自己的观点
   - 12: EcmaScript 5 发布
     - NaN、Infinity、undefined 都是常量了，不可更改。
     - 添加 JSON 序列化和反序列化
     - 函数新增 bind 方法
     - 数组添加了一系列方法: every, filter, forEach, indexOf, lastIndexOf, map, reduce, reduceRight, some
-    - Array.isArray 
+    - Array.isArray
     - 对象新增一系列方法。Object.keys(), Object.create(), Object.defineProperty, Object.defineProperties...
     - 对象的属性可以添加配置。writeable, value, enumerable, configurable, get, set
     - 严格模式
@@ -101,37 +143,39 @@
       - 不准用 arguments.caller 和 arguments.callee
       - 不支持八进制字面量，比如 var a = 015 会报错。
       - 对象字面量或者函数形参中，如果有重复的名字，就会报错。
-  - 12.3: Jeremy Ashkenas发布了CoffeeScript的最初版本。CoffeeScript可以被转化为JavaScript运行，但是语法要比JavaScript简洁。这开启了其他语言转为JavaScript的风潮
+  - 12.3: Jeremy Ashkenas 发布了 CoffeeScript 的最初版本。CoffeeScript 可以被转化为 JavaScript 运行，但是语法要比 JavaScript 简洁。这开启了其他语言转为 JavaScript 的风潮
 - 2010
-  - xx: facebook的php出现xhp
-  - xx: V8 更新 
-    - 引入了全新的优化 JIT 编译器 Crankshaft,支持32 位 MIPS指令集
-    - JS在执行的过程中，V8内置的Profiler筛选出热点函数并且记录参数的反馈类型，然后交给 Crankshaft 来进行优化生成机器码
-  - 5.20: Android 2.2 
-    - Dalvik虚拟机也支持JIT
+  - xx: facebook 的 php 出现 xhp
+  - xx: V8 更新
+    - 引入了全新的优化 JIT 编译器 Crankshaft,支持 32 位 MIPS 指令集
+    - JS 在执行的过程中，V8 内置的 Profiler 筛选出热点函数并且记录参数的反馈类型，然后交给 Crankshaft 来进行优化生成机器码
+  - 5.20: Android 2.2
+    - Dalvik 虚拟机也支持 JIT
 - 2011
+  - xx: C11。ISO 正式发布了新的 C 语言的新标准 C11（之前被称为 C1X），官方名称为[ISO/IEC 9899:2011](https://zh.m.wikipedia.org/zh-hans/C11)。新的标准提高了对 C++的兼容性，并增加了一些新的特性。这些新特性包括泛型、多执行绪、带边界检查的函式、匿名结构等。
+  - xx: C++11。[Boost](http://www.boost.org/)库对该版本影响很大，一些新的模块甚至直接衍生于 Boost 中相应的模块。一些新的语言特性，包括正则表达式（正则表达式详情）、完备的随机数生成函数库、新的时间相关函数，原子操作支持、标准线程库（2011 之前，C 和 C++语言均缺少对线程的支持）、一种能够和某些语言中 foreach 语句达到相同效果的新的 for 语法、auto 关键字、新的容器类、更好的 union 支持、数组初始化列表的支持以及变参模板的支持等等
   - xx: V8 更新
     - 垃圾回收器性能得到了极大的改善
     - V8 引入了隔离的概念，可以在一个进程中启动多个 V8 运行时实例，为在 Chrome 中实现轻量级的 Web Worker 铺平了道路
     - 构建系统迁移，从 SCons 转向 GYP
     - 支持 ES5 strict mode
-  - xx: Google发布了Dart语言，目的是为了结束JavaScript语言在浏览器中的垄断，提供更合理、更强大的语法和功能。Chromium浏览器有内置的Dart虚拟机，可以运行Dart程序，但Dart程序也可以被编译成JavaScript程序运行
-  - 2: AMD 规范发布(RequireJS社区)
+  - xx: Google 发布了 Dart 语言，目的是为了结束 JavaScript 语言在浏览器中的垄断，提供更合理、更强大的语法和功能。Chromium 浏览器有内置的 Dart 虚拟机，可以运行 Dart 程序，但 Dart 程序也可以被编译成 JavaScript 程序运行
+  - 2: AMD 规范发布(RequireJS 社区)
   - 6: EcmaScript 5.1
   - 7: Java SE 7
   - 7: JetBrains 推出 Kotlin 项目
 - 2012
   - xx: V8 更新。基准测试年
   - xx: AngularJS 1.0
-  - xx: 微软发布TypeScript语言。该语言被设计成JavaScript的超集，这意味着所有JavaScipt程序，都可以不经修改地在TypeScript中运行。同时，TypeScript添加了很多新的语法特性，主要目的是为了开发大型程序，然后还可以被编译成JavaScript运行
+  - xx: 微软发布 TypeScript 语言。该语言被设计成 JavaScript 的超集，这意味着所有 JavaScipt 程序，都可以不经修改地在 TypeScript 中运行。同时，TypeScript 添加了很多新的语法特性，主要目的是为了开发大型程序，然后还可以被编译成 JavaScript 运行
   - xx: asm 规范
-> Mozilla基金会提出asm.js规格。asm.js是JavaScript的一个子集，所有符合asm.js的程序都可以在浏览器中运行，它的特殊之处在于语法有严格限定，可以被快速编译成性能良好的机器码。这样做的目的，是为了给其他语言提供一个编译规范，使其可以被编译成高效的JavaScript代码。同时，Mozilla基金会还发起了Emscripten项目，目标就是提供一个跨语言的编译器，能够将LLVM的位代码（bitcode）转为JavaScript代码，在浏览器中运行。因为大部分LLVM位代码都是从C / C++语言生成的，这意味着C / C++将可以在浏览器中运行。此外，Mozilla旗下还有LLJS（将JavaScript转为C代码）项目和River Trail（一个用于多核心处理器的ECMAScript扩展）项目。目前，在可以被编译成JavaScript的语言列表上，共有将近40种语言
+    > Mozilla 基金会提出 asm.js 规格。asm.js 是 JavaScript 的一个子集，所有符合 asm.js 的程序都可以在浏览器中运行，它的特殊之处在于语法有严格限定，可以被快速编译成性能良好的机器码。这样做的目的，是为了给其他语言提供一个编译规范，使其可以被编译成高效的 JavaScript 代码。同时，Mozilla 基金会还发起了 Emscripten 项目，目标就是提供一个跨语言的编译器，能够将 LLVM 的位代码（bitcode）转为 JavaScript 代码，在浏览器中运行。因为大部分 LLVM 位代码都是从 C / C++语言生成的，这意味着 C / C++将可以在浏览器中运行。此外，Mozilla 旗下还有 LLJS（将 JavaScript 转为 C 代码）项目和 River Trail（一个用于多核心处理器的 ECMAScript 扩展）项目。目前，在可以被编译成 JavaScript 的语言列表上，共有将近 40 种语言
 - 2013
-  - xx: ECMA正式推出JSON的国际标准，这意味着JSON格式已经变得与XML格式一样重要和正式了
-  - xx: tj开始玩generator，编写co这个generator执行器，并开始了Koa
+  - xx: ECMA 正式推出 JSON 的国际标准，这意味着 JSON 格式已经变得与 XML 格式一样重要和正式了
+  - xx: tj 开始玩 generator，编写 co 这个 generator 执行器，并开始了 Koa
   - 3: EcmaScript 6 草案冻结
   - 10.31: [Android 4.4](https://developer.android.com/about/versions/kitkat?hl=zh-cn)
-    - ART是一项实验性功能，默认情况下不激活。Android Runtime（ART）作为新的运作环境，在安装应用程序时，它会使用提前编译（AOT）来把应用程序字节码完全编译为机器语言
+    - ART 是一项实验性功能，默认情况下不激活。Android Runtime（ART）作为新的运作环境，在安装应用程序时，它会使用提前编译（AOT）来把应用程序字节码完全编译为机器语言
   - 12: EcmaScript 6 草案发布
 - 2014
   - xx: V8 更新
@@ -139,6 +183,7 @@
     - 继 Chromium 之后，V8 转向了另一个构建系统 GN
     - 在源代码控制方面，V8 从 SVN 迁移到了 Git
   - 3: Java SE 8 (LTS)
+  - 8.18: C++14
   - 9: UMD 兼容的统一: 美籍华裔 Homa Wong 提交了 UMD 第一个版本的代码
   - 11.12: [Android 5.0 21 Lollipop](https://developer.android.com/about/versions/lollipop?hl=zh-cn)
     - ART 虚拟机
@@ -149,8 +194,8 @@
   - xx: V8 更新
     - 实现了代码缓存和脚本流，大大加快了网页加载速度
     - 同年晚些时候，开始了新解释器 Ignition 的开发工作
-    - 同年12月分，第一个 WebAssembly 原型来到了 V8 上
-  - 1: 6to5和EsNext团队开发 babel
+    - 同年 12 月分，第一个 WebAssembly 原型来到了 V8 上
+  - 1: 6to5 和 EsNext 团队开发 babel
   - 2.6: Node 0.12: 支持 generator
   - 4: Flutter(测试版) 会议公布， 支持 Android
   - 6: EcmaScript 6(2015) 发布
@@ -165,14 +210,14 @@
     - Promise
     - Iterator
     - 支持 let 与 const
-  - 6: Mozilla 在 asm.js 的基础上发布 WebAssembly 项目。这是一种JavaScript语言编译后的二进制格式，类似于Java的字节码，有利于移动设备加载JavaScript脚本，解析速度提高了20+倍。这意味着将来的软件，会发布JavaScript二进制包
-  - 8.22: Koa 1.0 :通过co + generator实现同步逻辑，那时候co还是基于thunkfy的
-  - 9.8: Node 4 :v8 支持ES6
+  - 6: Mozilla 在 asm.js 的基础上发布 WebAssembly 项目。这是一种 JavaScript 语言编译后的二进制格式，类似于 Java 的字节码，有利于移动设备加载 JavaScript 脚本，解析速度提高了 20+倍。这意味着将来的软件，会发布 JavaScript 二进制包
+  - 8.22: Koa 1.0 :通过 co + generator 实现同步逻辑，那时候 co 还是基于 thunkfy 的
+  - 9.8: Node 4 :v8 支持 ES6
 - 2016
   - xx: V8 更新
     - 最后一组 ES2015（以前称为“ES6”）特性集以及一些 ES2016 特性
     - 推出新的 Ignition 和 TurboFan 管道
-      - Ignition 解析AST生成字节码去执行
+      - Ignition 解析 AST 生成字节码去执行
       - TurboFan 根据字节码的执行反馈去根据基于字节码生成优化的机器码
     - 启动了 Orinoco 项目，这是一个针对 V8 的并发垃圾回收器，旨在减少主线程垃圾回收时间
     - 出于调试的目的，V8 检查器从 Chromium 迁移到了 V8，允许任何 V8 嵌入器（不仅仅是 Chromium）使用 Chrome DevTools 来调试在 V8 中运行的 JavaScript
@@ -181,11 +226,11 @@
     - 具有很多现代（也有称下一代）静态编程语言的特性：如类型推断、多范式支持、可空性表达、扩展函数、模式匹配等
   - 6: EcmaScript 7
     - Array.prototype.includes()
-    - 求幂运算符(**)
+    - 求幂运算符(\*\*)
   - 8.22: [Android 7.0 24 Nougat](https://developer.android.com/about/versions/nougat/android-7.0?hl=zh-cn)
-    - 添加JIT，属于对AOT的一种补充机制
+    - 添加 JIT，属于对 AOT 的一种补充机制
       - 应用在安装的时候 dex 不会被编译
-      - 应用在运行时 dex 文件先通过解析器（Interpreter）后会被直接执行（这一步骤跟 Android 2.2 - Android 4.4之前的行为一致），与此同时，热点函数（Hot Code）会被识别并被 JIT 编译后存储在 jit code cache 中并生成 profile 文件以记录热点函数的信息。
+      - 应用在运行时 dex 文件先通过解析器（Interpreter）后会被直接执行（这一步骤跟 Android 2.2 - Android 4.4 之前的行为一致），与此同时，热点函数（Hot Code）会被识别并被 JIT 编译后存储在 jit code cache 中并生成 profile 文件以记录热点函数的信息。
       - 手机进入 IDLE（空闲） 或者 Charging（充电） 状态的时候，系统会扫描 App 目录下的 profile 文件并执行 AOT 过程进行编译。
   - 10.25: Node 7
     - v8 实现了 async,await 无需规范落地就能够使用
@@ -200,11 +245,13 @@
   - EcmaScript 8
     - async/await
     - Object.values(), Object.entries(),Object.getOwnPropertyDescriptors()
-    - String padding: padStart()和padEnd()，填充字符串达到当前长度
-    - ShareArrayBuffer和Atomics对象，用于从共享内存位置读取和写入
-  - 9: Java SE 9	
+    - String padding: padStart()和 padEnd()，填充字符串达到当前长度
+    - ShareArrayBuffer 和 Atomics 对象，用于从共享内存位置读取和写入
+  - 9: Java SE 9
   - 11: 所有主流浏览器全部支持 WebAssembly，这意味着任何语言都可以编译成 JavaScript，在浏览器运行。
+  - 12.5: C++17。折叠表达式,类模板实参推导,用 auto 作为非类型模板参数,在 if 语句中使用 constexpr,简化的嵌套命名空间,lambda 表达式捕获\*this 的值
 - 2018
+  - xx: C18(C17)。没有引入新的语言特性，只对 C11 进行了补充和修正
   - xx: V8 更新
     - 为 WebAssembly 发布了一个名为 Liftoff 的基线编译器，它大大减少了 WebAssembly 应用程序的启动时间，同时提供了可预测的性能
     - 发布了 BigInt，一个新的 JavaScript 原始类型，可以实现任意精度的整数
@@ -215,32 +262,33 @@
   - 6: EcmaScript 9
     - 异步迭代
     - Promise.finally()
-    - ... Rest对象解构, Spread 对象展开
-    - 正则表达式命名捕获组,反向断言,dotAll模式,Unicode 转义
+    - ... Rest 对象解构, Spread 对象展开
+    - 正则表达式命名捕获组,反向断言,dotAll 模式,Unicode 转义
     - 非转义序列的模板字符串
   - 8.6: [Android 9 28 Pie](https://developer.android.com/about/versions/pie/android-9.0?hl=zh-cn)
     - 在 ART 虚拟机的基础上 , 增加了 Cdex ( Compat Dex )机制
   - 9: Java SE 11 (LTS)
-  - 12.4: Flutter 1.0 
+  - 12.4: Flutter 1.0
     - Dart 2.1
 - 2019
   - 3: Java SE 12
   - 6: EcmaScript 10
-    - Array.flat()和Array.flatMap()
-    - String.trimStart()和String.trimEnd(), String.prototype.matchAll
+    - Array.flat()和 Array.flatMap()
+    - String.trimStart()和 String.trimEnd(), String.prototype.matchAll
     - Symbol.prototype.description
     - Object.fromEntries
     - 可选 Catch
   - 7.9 [QuickJS 引擎](https://bellard.org/quickjs/)发布
     - 小巧且易于嵌入：只需几个 C 文件，没有外部依赖，210 KiB 的 x86 代码用于一个简单的 hello world 程序。
     - 启动时间极短的快速解释器
-    - 支持到ES2020标准，测试套件通过率百分百
+    - 支持到 ES2020 标准，测试套件通过率百分百
     - 可以将 Javascript 源代码编译为没有外部依赖的可执行文件。
     - 使用引用计数（以减少内存使用并具有确定性行为）和循环删除的垃圾收集。
     - 数学扩展：BigDecimal、BigFloat、运算符重载、bigint 模式、数学模式。(2020)
-    - 很小的C包装的标准库
+    - 很小的 C 包装的标准库
   - 9: Java SE 13
 - 2020
+  - xx: C++20: （四大新特性：概念、范围、协程和模块）以及核心语言（包括一些新的运算符和指示符）。
   - 3: Java SE 14
   - 6: EcmaScript 11
     - 空值处理 ??
@@ -257,27 +305,30 @@
     - String.prototype.replaceAll
     - Promise.any
     - WeakRefs
-    - ||=,  &&=, ??= 
+    - ||=, &&=, ??=
     - 数字分隔符 1_000_000_000
   - 9: Java SE 17 (LTS)
 - 2022
   - 3: Java SE 18
   - 6: [EcmaScript 13](https://www.51cto.com/article/715706.html)
-    - 顶层 await 
+    - 顶层 await
     - .at()索引值对应值的方法
     - findLast() 和 findLastIndex()
     - Object.hasOwn()
     - error.cause
     - RegExp 匹配索引
-    - Class的 类字段声明,私有方法和字段,静态类字段和静态私有方法,类静态块,in检查私有字段
-
+    - Class 的 类字段声明,私有方法和字段,静态类字段和静态私有方法,类静态块,in 检查私有字段
 
 # 参考文章
+
 - [《编程时间简史系列》JavaScript 模块化的历史进程](https://segmentfault.com/a/1190000023017398)
-- [JavaScript 20年](https://cn.history.js.org/)
+- [JavaScript 20 年](https://cn.history.js.org/)
 - [Android 虚拟机进化史](https://blog.csdn.net/u011033906/article/details/117806349)
 - [V8 十年故事：从农场诞生的星球最强 JS 引擎](https://www.infoq.cn/article/v8-10-years)
 - [JavaScript 引擎 V8 执行流程概述](https://cloud.tencent.com/developer/article/1554112)
 - [认识 V8 引擎](https://zhuanlan.zhihu.com/p/27628685)
-- [Linux发展历史年表](https://www.linuxprobe.com/linux-historical-chronology.html)
-- [2017，我们从Node.js的版本号大飞跃谈起](https://www.techug.com/post/2017-node-js/)
+- [Linux 发展历史年表](https://www.linuxprobe.com/linux-historical-chronology.html)
+- [C 语言历史](https://zh.m.wikipedia.org/zh-hans/C%E8%AF%AD%E8%A8%80%E7%9A%84%E5%8E%86%E5%8F%B2)
+- [走进编程：C++的发展历史](https://www.jianshu.com/p/0490bf3fb893)
+- [编程语言历史](https://zh.m.wikipedia.org/zh-sg/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80%E6%AD%B7%E5%8F%B2)
+- [现代编程语言大PK，2020年作为程序员的你应该了解这7门编程语言](https://zhuanlan.zhihu.com/p/112949238)
